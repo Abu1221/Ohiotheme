@@ -2,6 +2,7 @@
   width: 100%;
   background-color: $black;
   padding-bottom: 12vh;
+  padding-top: 10vh;
 
   .contact{
     width: $width-sm;
@@ -133,6 +134,7 @@
 
 @media only screen and (min-width: 764px){
   .contact-sec{
+    padding-top: 0;
     .contact{
       .contact-form{
         display: flex;
