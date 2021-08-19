@@ -1,0 +1,86 @@
+@import "global";
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+/******** Header - starts ***********/
+
+@import "header";
+
+/******** Header - ends ***********/
+
+/******** Hero - starts ***********/
+
+@import "hero";
+
+/******** Hero - ends ***********/
+
+/******** Pro-Grid - starts ***********/
+
+@import "grid";
+
+/******** Pro-Grid - ends ***********/
+
+/******** WWD - starts ***********/
+
+@import "wwd";
+
+/******** WWD - ends ***********/
+
+/******** WWD - starts ***********/
+@import "seperator";
+
+@import "clients";
+/******** WWD - ends ***********/
+
+/******** testi - starts ***********/
+
+@import "testi";
+
+/******** testi - ends ***********/
+
+/******** final - starts ***********/
+
+@import "final";
+
+/******** final - ends ***********/
+
+/******** contact - starts ***********/
+
+@import "contact";
+
+/******** contact - ends ***********/
+
+/******** footer - starts ***********/
+
+@import "footer";
+
+/******** footer - ends ***********/
+
+/******** copy - starts ***********/
+
+@import "copyright";
+
+/******** copy - ends ***********/

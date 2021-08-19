@@ -1,0 +1,207 @@
+.contact-sec{
+  width: 100%;
+  background-color: $black;
+  padding-bottom: 12vh;
+
+  .contact{
+    width: $width-sm;
+    margin-inline: auto;
+    color: $white;
+    
+    h4{
+      text-transform: uppercase;  
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      opacity: .8;
+    }
+    h1{
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-top: 1rem;
+      margin-bottom: 1.875rem;
+    }
+
+    .contact-form{
+
+      form{
+        display: grid;
+
+        .form{
+          padding: .5rem 0;
+          color: rgba($white, .7);
+          font-size: .875rem;
+          font-weight: 500;
+        }
+
+        input{
+          width: 100%;
+          margin-top: .5rem;
+          background-color: $light-black;
+          border: 0;
+          padding: 1rem;
+          border-radius: 5px;
+          margin-bottom: .5rem;
+        }
+      }
+
+      .form-select{
+        display: flex;
+        flex-direction: column;
+        color: rgba($white, .7);
+        font-size: .875rem;
+        font-weight: 500;
+
+        select{
+          background-color: $light-black;
+          color: rgba($white, .7);
+          border: 0;
+          padding: 1rem;
+          margin-top: .5rem;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: .875rem;
+
+          option{
+            background-color: $white;
+            color: $black;
+            border: 0;
+            padding: 1rem;
+          }
+        }
+        select:focus,
+        select:hover{
+          outline: none;
+        }
+        
+      }
+
+      .form-btn{
+        background-color: $red;
+        border: none;
+        border-radius: 5px;
+        padding: .875rem;
+        margin-top: 1.5rem;
+        text-align: center;
+        transition: all .2s ease-in-out;
+        font-weight: 500;
+
+        a{
+          color: $white;
+        }
+      }
+
+      .form-btn:hover{
+        opacity: 0.9;
+      }
+    }
+
+    .form-right-side{
+      
+      padding-top: 3rem;
+
+      h5{
+        font-size: 1rem;
+      }
+      h4{
+        text-transform: uppercase;  
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        opacity: .8;
+      }
+
+      h1{
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .from-right-side-1{
+        opacity: .7;
+      }
+
+      .from-right-side-2{
+        opacity: .7;
+        margin-top: 1.875rem;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 764px){
+  .contact-sec{
+    .contact{
+      .contact-form{
+        display: flex;
+
+        form{
+          flex-basis: 65%;
+        }
+        .form-right-side{
+          flex-basis: auto;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1140px){
+  .contact-sec{
+    .contact{
+      width: 85%;
+      margin-inline: auto;
+    }
+  }
+
+}
+@media only screen and (min-width: 1280px){
+  .contact-sec{
+    .contact{
+      width: 85%;
+      margin-inline: auto;
+      .contact-form{
+        display: flex;
+
+        form{
+          flex-basis: 65%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3,1fr);
+          grid-column-gap: 2rem;
+
+          .form-btn{
+            display: inline-block;
+            width: 150px;
+          }
+        }
+        .form-right-side{
+          flex-basis: auto;
+          margin-left: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1400px){
+  .contact-sec{
+    .contact{
+      width: $width-lg;
+
+      h1{
+        font-size: 2.5rem;
+      }
+      form{
+        flex: 75%;
+      }
+      .form-right-side{
+        h1{
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}

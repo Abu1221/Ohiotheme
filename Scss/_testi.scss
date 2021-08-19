@@ -1,0 +1,112 @@
+.testimonial{
+  width: 100%;
+  height: 68vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.4)), url("../Img/clients/charles-forerunner-3fPXt37X6UQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+
+  .test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .test-sec{
+      width: 90%;
+      height: 440px;
+      margin-inline: auto;
+      background-color: $black;
+      padding: 1.875rem .875rem;
+
+      .test-box{
+        padding: 1.875rem .875rem;
+
+        h4{
+          margin-top: 1rem;
+          margin-bottom: .3rem;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        p{
+          opacity: .7;
+        }
+        .test-user{
+          width: 50px;
+          height: 50px;
+          background-image: url("../Img/user1.jpg");
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: none;
+          border-radius: 50%;
+        }
+      }
+
+      .test-line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .875rem;
+
+        .test-line-left{
+          display: flex;
+          align-items: center;
+
+          .test-line-bar{
+            width: 55px;
+            margin-left: .875rem;
+            margin-right: .875rem;
+            height: 2px;
+            background-color: rgba($white, .5);
+          }
+        }
+
+        .test-line-right{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width:764px){
+.testimonial{
+  height: 65vh;
+  .test{
+    width: 640px;
+    margin-left: .5rem;
+  }
+}
+}
+
+@media only screen and (min-width:1140px){
+  .testimonial{
+    .test{
+      margin-left: 3.875rem;
+    }
+  }
+}
+
+@media only screen and (min-width:1400px){
+  .testimonial{
+    .test{
+      margin-left: 25vh;
+    }
+  }
+}
+
+@media only screen and (min-width:1500px){
+  .testimonial{
+    .test{
+      margin-left: 30vh;
+    }
+  }
+}
